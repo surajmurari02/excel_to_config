@@ -1,0 +1,358 @@
+{
+    "root_dir": "/app/Recordings",
+    "loc_name": null,
+    "toll_name": null,
+    "alpr_post_url": null,
+    "atcc_post_url": null,
+    "alert_post_url": "http://192.168.200.83:8082/apiv2/vehiclealert",
+    "classification_model": "",
+    "blur": false,
+    "detection_model": {
+        "atcc_model": {
+            "weights_file": "/app/weights/Incidents/v4_1_x_16_4023map_20231003_anpr_rtx3090_enc.engine",
+            "config_file": "/",
+            "size": 416,
+            "names_file": "/app/weights/Incidents/obj.names",
+            "instances": {}
+        },
+        "alpr_model": {
+            "weights_file": "/app/weights/v4_1_x_16_Incidents_RTXa2000_enc.engine",
+            "config_file": "/",
+            "size": 416,
+            "names_file": "/app/weights/obj.names",
+            "instances": {
+                "0": [
+                    16,
+                    16
+                ]
+            }
+        }
+    },
+    "ocr_model": {
+        "weights_file": "/app/weights/ocr_enc.pth"
+    },
+    "pgie": "/app/config/dstest1_pgie_config.txt",
+    "tracker": "/app/config/dstest2_tracker_config.txt",
+    "camera_list": [
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.68:554/",
+            "lane_name": "CCTV-CAMERA-064",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-064-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.69:554/",
+            "lane_name": "CCTV-CAMERA-065",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-065-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.70:554/",
+            "lane_name": "CCTV-CAMERA-066",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-066-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.71:554/",
+            "lane_name": "CCTV-CAMERA-067",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-067-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.72:554/",
+            "lane_name": "CCTV-CAMERA-068",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-068-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.73:554/",
+            "lane_name": "CCTV-CAMERA-069",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-069-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.74:554/",
+            "lane_name": "CCTV-CAMERA-070",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-070-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "video_src": "rtsp://admin:Idsl@123@192.168.10.75:554/",
+            "lane_name": "CCTV-CAMERA-071",
+            "classify": false,
+            "mlff": true,
+            "request_code": "CCTV-CAMERA-071-EX-LHS",
+            "loc_name": "IP Bullet ",
+            "camera_orientation": "front",
+            "use_model": "alpr_model",
+            "camera_type": "alpr",
+            "rtsp_feed_type": "ffmpeg",
+            "axle_count": false,
+            "record": false,
+            "early_exit": true,
+            "violations": false,
+            "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+            "queue_time": null,
+            "alert_post_url": null,
+            "blur": false,
+            "process_live": true,
+            "fps": 25,
+            "vahan_speed": "fast",
+            "vahan_with_plates_only": "False",
+            "generate_csv": true,
+            "save_image": false,
+            "lane": [
+                [
+                    0.429,
+                    0,
+                    0,
+                    0.6
+                ],
+                [
+                    0.67,
+                    0,
+                    0.74,
+                    0.98
+                ]
+            ]
+        }
+    ]
+}

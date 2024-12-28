@@ -1,0 +1,28 @@
+{
+    "video_src": "",
+    "lane_name": "",
+    "classify": false,
+    "mlff": true,
+    "request_code": "",
+    "loc_name": "",
+    "camera_orientation": "front",
+    "use_model": "alpr_model",
+    "camera_type": "alpr",
+    "rtsp_feed_type": "ffmpeg",
+    "axle_count": false,
+    "record": false,
+    "early_exit": true,
+    "violations": false,
+    "post_url": "http://192.168.200.83:8082/apiv2/tollvehiclealpr",
+    "queue_time": null,
+    "alert_post_url": null,
+    "blur": false,
+    "process_live": true,
+    "fps": 25,
+    "vahan_speed": "fast",
+    "vahan_with_plates_only": "False",
+    "generate_csv": true,
+    "save_image": false,
+    "lane": [[0.429, 0, 0, 0.6], [0.67, 0, 0.74, 0.98]]
+  }
+  

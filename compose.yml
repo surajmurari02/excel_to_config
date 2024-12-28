@@ -1,0 +1,25 @@
+services:
+  exce_to_con:
+    image: samajh/deps:23.04-py3
+    container_name: exce_to_config
+    # ports:
+      # - "1425:1425"
+    volumes:
+      - ./code:/app/code/
+      # - /home/azureuser/Documents/journey_dataset:/app/journey_dataset/
+    environment:
+      - TZ=Asia/Calcutta
+    privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            device_ids: ['0']
+            capabilities: [gpu]
+    working_dir: /app/
+    restart: always
+    # shm_size: '50g'
+    stdin_open: true
+    tty: true
+    command: ["bash"]
